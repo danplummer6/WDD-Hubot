@@ -6,11 +6,15 @@ module.exports = (robot) ->
   robot.respond /hi|hello|hey/i, (msg) ->
     msg.send "Hello human friend!"
 
+#----------------------------------------------------
+
 # Bot listens for superbowl or super bowl
 # Bot responds with message
 
   robot.hear /superbowl|super bowl/i, (res) ->
     res.send "The Minnesota Vikings are going to win the Superbowl!"
+
+#----------------------------------------------------
 
 # Bot listens halo 
 # Bot displays a random image
@@ -24,3 +28,5 @@ module.exports = (robot) ->
 
   robot.hear /halo/i, (msg) ->
     msg.send msg.random halo
+
+#----------------------------------------------------
